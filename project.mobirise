@@ -54,7 +54,9 @@
     "screenshot": "screenshot.png",
     "witsec-mailform": false,
     "witsec-white-label": true,
-    "publishChangesOnly": false
+    "publishChangesOnly": false,
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "devportal-signin.html": {
