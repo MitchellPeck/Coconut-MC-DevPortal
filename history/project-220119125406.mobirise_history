@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Coconut MC DevPortal",
-    "currentPage": "devportal-logout.html",
+    "currentPage": "devportal-help.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -54,7 +54,9 @@
     "screenshot": "screenshot.png",
     "witsec-mailform": false,
     "witsec-white-label": true,
-    "publishChangesOnly": false
+    "publishChangesOnly": false,
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "devportal-signin.html": {
@@ -509,7 +511,7 @@
       "settings": {
         "title": "DevPortal Log Out",
         "order": 9,
-        "footer_custom": "<div id=\"SFctr\" class=\"SF\" data-org=\"28337\" data-ini=\"signout\" data-out=\"https://devportal.coconutmcgames.com/devportal-signin\" data-scl=\"0\" data-sfi=\"1\"><script type=\"text/javascript\" src=\"https://cdn.membershipworks.com/mfm.js\"></script>"
+        "footer_custom": "<div id=\"SFctr\" class=\"SF\" data-org=\"28337\" data-ini=\"signout\" data-out=\"https://devportal.coconutmcgames.com/devportal-login\" data-scl=\"0\" data-sfi=\"1\"><script type=\"text/javascript\" src=\"https://cdn.membershipworks.com/mfm.js\"></script>"
       },
       "components": [
         {
