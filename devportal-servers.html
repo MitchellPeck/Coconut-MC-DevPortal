@@ -104,4 +104,29 @@
   
   
 </body>
+  <script>
+dependencies {
+    implementation 'com.exaroton:api:1.2.1'
+}
+
+ExarotonClient client = new ExarotonClient("voWhXsWbT3pLn5bIveyeUYcIEK8fCnrtrVMYPewIrC7yJD2wkDoTHAjm31HG0hEc1TQdgg0ojE6gpkVOM2xW6g6aoNO5U3knIP3b");
+
+Server server = client.getServer("tgkm731xO7GiHt76");
+try {
+    server.get();
+    System.out.println(server.getStatus());
+
+    if (server.hasStatus(ServerStatus.ONLINE)) {
+        System.out.println("Server is online!");
+    }
+    else if (server.hasStatus(ServerStatus.OFFLINE)) {
+        System.out.println("Server is offline!");
+    }
+    else if (server.hasStatus(new int[]{ServerStatus.PREPARING, ServerStatus.LOADING, ServerStatus.STARTING})) {
+        System.out.println("Server is starting!");
+    }
+} catch (APIException e) {
+    e.printStackTrace();
+}
+</script>
 </html>
